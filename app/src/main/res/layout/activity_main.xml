@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:hint="  Github Owner Name "
+        android:background="@drawable/edittext_bg_layout"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_centerInParent="true"
+        android:id="@+id/owner_et"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:hint="  Repo Name"
+        android:background="@drawable/edittext_bg_layout"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:id="@+id/repo_et"
+        android:layout_marginTop="40px"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/owner_et"
+        />
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/submit_btn"
+          android:layout_below="@id/repo_et"
+          android:layout_marginLeft="40px"
+          android:layout_marginRight="40px"
+          android:layout_marginTop="40px"
+          android:background="#800000"
+          android:text="SUBMIT"
+          android:textColor="#ffffff"
+          />
+</RelativeLayout>
